@@ -1,0 +1,24 @@
+package panneauResponsableService;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+
+public class PGestionCatalogue extends JPanel {
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public PGestionCatalogue() {
+		setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(PGestionCatalogue.class.getResource("/images/bg_rs_gestion.png")));
+		lblNewLabel.setBounds(0, 0, 660, 371);
+		add(lblNewLabel);
+
+	}
+
+}

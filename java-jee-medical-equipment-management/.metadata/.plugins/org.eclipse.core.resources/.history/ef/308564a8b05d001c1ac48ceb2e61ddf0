@@ -1,0 +1,44 @@
+package panneauVisiteurMedical;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+
+public class PRetourEmprunt extends JPanel {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public PRetourEmprunt() {
+		setLayout(null);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Materiel 1", "Materil 2"}));
+		comboBox.setBounds(154, 117, 84, 22);
+		add(comboBox);
+		
+		JLabel lblSlectionner = new JLabel("Sélectionner");
+		lblSlectionner.setForeground(Color.WHITE);
+		lblSlectionner.setFont(new Font("Roboto", Font.PLAIN, 13));
+		lblSlectionner.setBounds(79, 119, 259, 21);
+		add(lblSlectionner);
+		
+		JLabel lblRetournerLesMatriels = new JLabel("Retourner les matériels");
+		lblRetournerLesMatriels.setIcon(new ImageIcon(PRetourEmprunt.class.getResource("/images/gestion/commande/Shopping-Cart-05-48.png")));
+		lblRetournerLesMatriels.setBounds(69, 46, 303, 28);
+		lblRetournerLesMatriels.setForeground(Color.WHITE);
+		lblRetournerLesMatriels.setFont(new Font("Roboto", Font.PLAIN, 18));
+		add(lblRetournerLesMatriels);
+		
+		JLabel background_img = new JLabel("");
+		background_img.setBounds(0, 0, 820, 478);
+		background_img.setIcon(new ImageIcon(PRetourEmprunt.class.getResource("/images/bg_recherche.png")));
+		add(background_img);
+
+	}
+}

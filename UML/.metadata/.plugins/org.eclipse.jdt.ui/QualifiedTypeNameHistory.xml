@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="classesFenetres.UI"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
+    <fullyQualifiedTypeName name="panelCourse.PAjouterCourse"/>
+    <fullyQualifiedTypeName name="panelEcurie.PAjouterEcurie"/>
+    <fullyQualifiedTypeName name="panel_circuit.PAjouterCircuit"/>
+    <fullyQualifiedTypeName name="panelPersonnel.PAjouterPilote"/>
+    <fullyQualifiedTypeName name="panelPersonnel.PAjouterMecanicien"/>
+    <fullyQualifiedTypeName name="panelSpectateur.PAjouterSpectateur"/>
+    <fullyQualifiedTypeName name="panelVoiture.PAjouterVoiture"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="classesMetiers.ModelDB"/>
+</qualifiedTypeNameHistroy>

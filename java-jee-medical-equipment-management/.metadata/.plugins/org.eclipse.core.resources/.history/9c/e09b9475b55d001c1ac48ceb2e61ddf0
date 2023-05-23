@@ -1,0 +1,105 @@
+package classeGraphique;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
+import javax.swing.JButton;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import java.awt.Color;
+import javax.swing.JSeparator;
+import java.awt.Font;
+
+public class FMenuRS extends JFrame {
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FMenuRS frame = new FMenuRS();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FMenuRS() {
+		setTitle("Gestion de catalogue");
+		setResizable(false);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(FMenuRS.class.getResource("/images/accueil/Settings-02-128.png")));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 665, 391);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu menuParamètre = new JMenu("Paramètres");
+		menuBar.add(menuParamètre);
+		
+		JMenuItem menuChangerUtilisateur = new JMenuItem("Changer l'utilisateur");
+		menuChangerUtilisateur.setForeground(new Color(128, 128, 128));
+		menuParamètre.add(menuChangerUtilisateur);
+		
+		JMenu menuMenu = new JMenu("Menu");
+		menuBar.add(menuMenu);
+		
+		JMenuItem mmMenuGestionMateriel = new JMenuItem("Gestion materiel");
+		mmMenuGestionMateriel.setForeground(new Color(128, 128, 128));
+		menuMenu.add(mmMenuGestionMateriel);
+		
+		JSeparator separator = new JSeparator();
+		menuMenu.add(separator);
+		
+		JMenuItem mmMenuGestionCatalogue = new JMenuItem("Gestion Catalogue");
+		mmMenuGestionCatalogue.setForeground(new Color(128, 128, 128));
+		menuMenu.add(mmMenuGestionCatalogue);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnDeconnexion = new JButton("Déconnexion");
+		btnDeconnexion.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/connection/Power-48.png")));
+		btnDeconnexion.setForeground(Color.WHITE);
+		btnDeconnexion.setFont(new Font("Roboto", Font.PLAIN, 10));
+		UI.deshabillerBouton(btnDeconnexion, "connection", "Power", 48);
+		btnDeconnexion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));	
+		btnDeconnexion.setBounds(493, 0, 157, 50);
+		
+		contentPane.add(btnDeconnexion);
+		
+		JButton btnGestionCatalogue = new JButton("");
+		btnGestionCatalogue.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/gestionCatalogue-128.png")));
+		btnGestionCatalogue.setBounds(348, 35, 135, 107);
+		UI.deshabillerBouton(btnGestionCatalogue, "", "gestionCatalogue", 128);
+		btnGestionCatalogue.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));	
+		contentPane.add(btnGestionCatalogue);
+		
+		JButton btnGestionMateriel = new JButton("");
+		btnGestionMateriel.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/gestionMateriel-128.png")));
+		btnGestionMateriel.setBounds(106, 35, 135, 107);
+		UI.deshabillerBouton(btnGestionMateriel, "", "gestionMateriel", 128);
+		btnGestionMateriel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));	
+		contentPane.add(btnGestionMateriel);
+		
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/bg_rs.png")));
+		background.setBounds(0, 0, 663, 362);
+		contentPane.add(background);
+	}
+}

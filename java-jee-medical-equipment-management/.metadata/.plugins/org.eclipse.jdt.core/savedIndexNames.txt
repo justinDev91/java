@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\Java\gestion_materiel_medical\.metadata\.plugins\org.eclipse.jdt.core
+183168310.index
+3591720327.index
+4008844604.index
+2192220261.index
+897014179.index

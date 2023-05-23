@@ -1,0 +1,22 @@
+package panneauResponsableService;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+public class PGestionCatalogue extends JPanel {
+
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public PGestionCatalogue() {
+		setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(0, 0, 829, 476);
+		add(lblNewLabel);
+
+	}
+
+}

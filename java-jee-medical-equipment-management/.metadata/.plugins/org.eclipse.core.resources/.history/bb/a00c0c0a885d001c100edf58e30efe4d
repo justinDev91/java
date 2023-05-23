@@ -1,0 +1,14 @@
+package panneauVisiteurMedical;
+
+import javax.swing.JPanel;
+
+public class PEmprunt extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PEmprunt() {
+
+	}
+
+}

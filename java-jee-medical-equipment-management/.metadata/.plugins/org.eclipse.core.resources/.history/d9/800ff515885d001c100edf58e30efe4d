@@ -1,0 +1,18 @@
+package panneauVisiteurMedical;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+public class PretourEmprunt extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PretourEmprunt() {
+		
+		JLabel lblNewLabel = new JLabel("Retour");
+		add(lblNewLabel);
+
+	}
+
+}

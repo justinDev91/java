@@ -1,0 +1,40 @@
+package panneauResponsableService;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JCheckBox;
+
+public class PGestionMateriel extends JPanel {
+	private static final long serialVersionUID = 1L;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Create the panel.
+	 */
+	public PGestionMateriel() {
+		setLayout(null);
+		
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(PGestionMateriel.class.getResource("/images/bg_rs_gestion.png")));
+		background.setBounds(0, 0, 661, 371);
+		add(background);
+		setLayout(null);
+		
+		
+		
+
+	}
+}

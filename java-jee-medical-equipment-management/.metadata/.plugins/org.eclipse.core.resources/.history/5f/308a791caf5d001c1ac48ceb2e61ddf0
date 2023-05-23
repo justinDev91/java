@@ -1,0 +1,31 @@
+package panneauVisiteurMedical;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+
+public class PRetourEmprunt extends JPanel {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public PRetourEmprunt() {
+		setLayout(null);
+		
+		JLabel titre = new JLabel("Mes emprunts");
+		titre.setBounds(180, 5, 89, 17);
+		titre.setForeground(Color.WHITE);
+		titre.setFont(new Font("Roboto", Font.PLAIN, 14));
+		add(titre);
+		
+		JLabel background_img = new JLabel("");
+		background_img.setBounds(-185, 27, 820, 478);
+		background_img.setIcon(new ImageIcon(PRetourEmprunt.class.getResource("/images/bg_recherche.png")));
+		add(background_img);
+
+	}
+
+}

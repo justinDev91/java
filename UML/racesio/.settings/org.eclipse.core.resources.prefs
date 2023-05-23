@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/classesFenetres/FConnexion.java=UTF-8
+encoding//src/classesMetiers/ModelDB.java=UTF-8
+encoding//src/panelCircuit/PAjouterCircuit.java=UTF-8
+encoding//src/panelCircuit/PSupprimerCircuit.java=UTF-8
+encoding//src/panelCourse/PAjouterCourse.java=UTF-8
+encoding//src/panelEcurie/PAjouterEcurie.java=UTF-8
+encoding//src/panelEcurie/PSupprimerEcurie.java=UTF-8
+encoding//src/panelPersonnel/PAjouterMecanicien.java=UTF-8
+encoding//src/panelPersonnel/PAjouterPilote.java=UTF-8
+encoding//src/panelSpectateur/PAjouterSpectateur.java=UTF-8
+encoding//src/panelVoiture/PAjouterVoiture.java=UTF-8
+encoding//src/test/ModelDBTest.java=UTF-8

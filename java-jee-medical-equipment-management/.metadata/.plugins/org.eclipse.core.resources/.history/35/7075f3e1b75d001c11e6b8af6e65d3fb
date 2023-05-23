@@ -1,0 +1,14 @@
+package panneauResponsableService;
+
+import javax.swing.JPanel;
+
+public class PGestionMateriel extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PGestionMateriel() {
+
+	}
+
+}

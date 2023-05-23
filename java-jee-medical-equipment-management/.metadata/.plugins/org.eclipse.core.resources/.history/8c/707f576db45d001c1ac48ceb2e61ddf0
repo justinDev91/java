@@ -1,0 +1,61 @@
+package classeGraphique;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Toolkit;
+
+public class FMenuRS extends JFrame {
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FMenuRS frame = new FMenuRS();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FMenuRS() {
+		setTitle("Gestion de catalogue");
+		setResizable(false);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(FMenuRS.class.getResource("/images/accueil/Settings-02-128.png")));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 669, 391);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel gestion_materiel_1 = new JLabel("");
+		gestion_materiel_1.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/gestion_catalogue.png")));
+		gestion_materiel_1.setBounds(337, 49, 114, 99);
+		contentPane.add(gestion_materiel_1);
+		
+		JLabel gestion_materiel = new JLabel("");
+		gestion_materiel.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/gestion_materiel.png")));
+		gestion_materiel.setBounds(139, 56, 114, 99);
+		contentPane.add(gestion_materiel);
+		
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(FMenuRS.class.getResource("/images/bg_rs.png")));
+		background.setBounds(0, 0, 663, 362);
+		contentPane.add(background);
+	}
+
+}

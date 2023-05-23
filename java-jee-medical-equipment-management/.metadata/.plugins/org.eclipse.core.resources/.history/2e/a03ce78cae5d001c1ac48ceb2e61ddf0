@@ -1,0 +1,20 @@
+package panneauVisiteurMedical;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+
+public class PEmprunt extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public PEmprunt() {
+		
+		JLabel background_img = new JLabel("");
+		background_img.setIcon(new ImageIcon(PEmprunt.class.getResource("/images/bg_recherche.png")));
+		add(background_img);
+
+	}
+
+}
